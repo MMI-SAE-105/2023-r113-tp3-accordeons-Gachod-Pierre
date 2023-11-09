@@ -11,7 +11,7 @@
     <h1>Accordéon avec des booléens</h1>
     <div class="accordeon">
       <section x-data="{TxtIsOpen:false}">
-        <button>bouton 1</button>
+        <button aria-controls="bttn1" @click="TxtIsOpen = ! TxtIsOpen" class="btn">bouton 1</button>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illo reprehenderit corrupti. Rem ex pariatur nemo nesciunt excepturi, odio repellat cumque delectus beatae sit assumenda nobis labore accusamus possimus omnis?</p>
       </section>
       <section>
