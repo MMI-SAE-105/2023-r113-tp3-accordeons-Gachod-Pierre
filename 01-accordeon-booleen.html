@@ -12,7 +12,7 @@
     <div class="accordeon">
       <section x-data="{TxtIsOpen:false}">
         <button aria-controls="bttn1" @click="TxtIsOpen = ! TxtIsOpen" class="btn">bouton 1</button>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illo reprehenderit corrupti. Rem ex pariatur nemo nesciunt excepturi, odio repellat cumque delectus beatae sit assumenda nobis labore accusamus possimus omnis?</p>
+        <p id="bttn1" x-show="TxtIsOpen" x-transition class="smalltext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illo reprehenderit corrupti. Rem ex pariatur nemo nesciunt excepturi, odio repellat cumque delectus beatae sit assumenda nobis labore accusamus possimus omnis?</p>
       </section>
       <section>
         <button>bouton 2</button>
