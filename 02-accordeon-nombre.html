@@ -11,7 +11,7 @@
     <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
     <div class="accordeon" x-data="{TxtIsOpen:1}">
       <section>
-        <button @click="TxtIsOpen = 1" >bouton 1</button>
+        <button @click="TxtIsOpen = (TxtIsOpen === 1)?0:1" >bouton 1</button>
         <p x-show="TxtIsOpen === 1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime cupiditate sapiente voluptates nobis voluptatum commodi, eligendi dolore at, pariatur quod ut exercitationem quas excepturi accusamus suscipit nihil blanditiis reprehenderit dolorem.</p>
       </section>
       <section>
