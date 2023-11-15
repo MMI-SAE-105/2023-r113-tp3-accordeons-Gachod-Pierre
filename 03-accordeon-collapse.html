@@ -10,5 +10,19 @@
   </head>
   <body>
     <h1>Accordéon avec <code>x-collapse</code></h1>
+    <div class="accordeon" x-data="{TxtIsOpen:1}">
+      <section>
+        <button aria-controls="bttn1" @click="TxtIsOpen = (TxtIsOpen === 1)?0:1" class="btn" >bouton 1</button>
+        <p id="bttn1" x-show="TxtIsOpen === 1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime cupiditate sapiente voluptates nobis voluptatum commodi, eligendi dolore at, pariatur quod ut exercitationem quas excepturi accusamus suscipit nihil blanditiis reprehenderit dolorem.</p>
+      </section>
+      <section>
+        <button  aria-controls="bttn2" @click="TxtIsOpen = (TxtIsOpen === 2)?0:2" class="btn" >bouton 2</button>
+        <p id="bttn2" x-show="TxtIsOpen === 2">Soluta ab reiciendis similique libero labore iure assumenda omnis laborum deserunt sunt voluptatum maxime eum adipisci doloribus dolorem reprehenderit debitis neque accusamus, aspernatur dicta blanditiis animi? Et unde sequi aliquid.</p>
+      </section>
+      <section>
+        <button  aria-controls="bttn3" @click="TxtIsOpen = (TxtIsOpen === 3)?0:3" class="btn" >bouton 3</button>
+        <p id="bttn3" x-show="TxtIsOpen === 3">Nostrum adipisci tenetur modi quam, unde placeat aut! Quisquam fugiat doloremque enim, velit itaque quas obcaecati provident, incidunt cumque reiciendis, ullam earum distinctio quos! Sed soluta non consequuntur ipsum harum.</p>
+      </section>
+    </div>
   </body>
 </html>
