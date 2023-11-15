@@ -9,15 +9,31 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <style>
       .fermé {
-          color: red
+        background-color: #ff0000; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-bottom: 1vh;
       }
       .ouvert {
-          color: green;
+        background-color: #04AA6D; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-bottom: 1vh;
       }
     </style>
   </head>
   <body>
-    <h1>Accordéon avec <code>x-collapse</code></h1>
+    <h1>Accordéon avec <code>x-collapse</code> + CSS</h1>
     <div class="accordeon" x-data="{TxtIsOpen:1}">
       <section>
         <button aria-controls="bttn1" 
