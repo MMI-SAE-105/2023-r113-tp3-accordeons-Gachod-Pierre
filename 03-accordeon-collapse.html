@@ -36,7 +36,11 @@
         <p id="bttn2" x-show="TxtIsOpen === 2" x-collapse>Soluta ab reiciendis similique libero labore iure assumenda omnis laborum deserunt sunt voluptatum maxime eum adipisci doloribus dolorem reprehenderit debitis neque accusamus, aspernatur dicta blanditiis animi? Et unde sequi aliquid.</p>
       </section>
       <section>
-        <button  aria-controls="bttn3" @click="TxtIsOpen = (TxtIsOpen === 3)?0:3" class="btn" >bouton 3</button>
+        <button  aria-controls="bttn3"
+          @click="TxtIsOpen = (TxtIsOpen === 3)?0:3"
+          :class="{ouvert:TxtIsOpen === 3, 'fermé':TxtIsOpen !== 3 }" >
+            bouton 3
+          </button>
         <p id="bttn3" x-show="TxtIsOpen === 3" x-collapse>Nostrum adipisci tenetur modi quam, unde placeat aut! Quisquam fugiat doloremque enim, velit itaque quas obcaecati provident, incidunt cumque reiciendis, ullam earum distinctio quos! Sed soluta non consequuntur ipsum harum.</p>
       </section>
     </div>
