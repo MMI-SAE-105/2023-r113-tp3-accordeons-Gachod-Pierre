@@ -16,7 +16,7 @@
       </section>
       <section>
         <button  @click="TxtIsOpen = (TxtIsOpen === 2)?0:2" >bouton 2</button>
-        <p x-show="TxtIsOpen === 2">Soluta ab reiciendis similique libero labore iure assumenda omnis laborum deserunt sunt voluptatum maxime eum adipisci doloribus dolorem reprehenderit debitis neque accusamus, aspernatur dicta blanditiis animi? Et unde sequi aliquid.</p>
+        <p x-show="TxtIsOpen === 2" x-transition.duration.500ms.scale.0.origin.top>Soluta ab reiciendis similique libero labore iure assumenda omnis laborum deserunt sunt voluptatum maxime eum adipisci doloribus dolorem reprehenderit debitis neque accusamus, aspernatur dicta blanditiis animi? Et unde sequi aliquid.</p>
       </section>
       <section>
         <button  @click="TxtIsOpen = (TxtIsOpen === 3)?0:3" >bouton 3</button>
