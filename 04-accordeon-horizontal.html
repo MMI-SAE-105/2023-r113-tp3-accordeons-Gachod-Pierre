@@ -60,7 +60,7 @@
           </figcaption>
         </figure>
       </li>
-      <li aria-controls="acc2" @click="TxtIsOpen = 2" :class="{actif:TxtIsOpen === 2,}">
+      <li aria-controls="acc2" @click="TxtIsOpen = (TxtIsOpen === 2)?0:2" :class="{actif:TxtIsOpen === 2,}">
         <figure>
           <img src="https://picsum.photos/100?random=2" alt="" width="102">
           <figcaption>
