@@ -51,7 +51,7 @@
   <body>
     <h1>Accordéon horizontal</h1>
     <ul id="accordeon" x-data="{TxtIsOpen:0}">
-      <li aria-controls="acc1" @click="TxtIsOpen = 1" :class="{actif:TxtIsOpen === 1,}">
+      <li aria-controls="acc1" @click="TxtIsOpen = (TxtIsOpen === 1)?0:1" :class="{actif:TxtIsOpen === 1,}">
         <figure>
           <img src="https://picsum.photos/100?random=1" alt="" width="102">
           <figcaption>
