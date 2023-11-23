@@ -6,6 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon avec des booléens</title>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+    
+      h1 {
+        text-align: center;
+      }
+    
+      .accordeon {
+        width: 80%;
+        max-width: 600px;
+      }
+    
+      section {
+        margin-bottom: 10px;
+        background-color: rgb(214, 228, 230);
+        outline: auto;
+        outline-color: rgb(127, 127, 127);
+      }
+    
+      .btn {
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+        border-radius: 5px;
+        outline: none;
+      }
+    
+      .btn.ouvert {
+        background-color: #2980b9;
+      }
+    
+      .smalltext {
+        max-height: 200px;
+        overflow: hidden;
+        padding: 10px;
+      }
+    
+      .smalltext[style] {
+        max-height: 200px;
+      }
+    </style>
+    
   </head>
   <body>
     <h1>Accordéon avec des booléens</h1>
