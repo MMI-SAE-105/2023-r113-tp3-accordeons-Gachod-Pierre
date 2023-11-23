@@ -13,15 +13,15 @@
       ouvert : 1,
      }">
      <div>
-      <div role="tabpanel" x-show="ouvert === 1">
+      <div role="tabpanel" :class="{actif:ouvert === 1,}">
         <h1>Panneau 1</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit cumque vel placeat laboriosam illo, blanditiis quidem, laborum molestias unde provident deleniti repudiandae alias corrupti sunt dolorum quod, voluptates facere culpa!</p>
       </div>
-      <div role="tabpanel" x-show="ouvert === 2">
+      <div role="tabpanel" :class="{actif:ouvert === 1,}">
         <h1>Panneau 2</h1>
         <p>Velit accusantium adipisci rerum aspernatur officiis itaque cupiditate odit explicabo, consectetur nemo delectus alias aperiam eius, facilis at! Repudiandae ratione amet omnis quidem molestias eligendi dolorum delectus ab nesciunt sit?</p>
       </div>
-      <div role="tabpanel" x-show="ouvert === 3">
+      <div role="tabpanel" :class="{actif:ouvert === 1,}">
         <h1>Panneau 3</h1>
         <p>Dolorem ipsam non alias mollitia libero? Perferendis repellendus culpa quos fuga eaque animi ipsa error facilis dolore quod! Esse quod nesciunt nemo earum excepturi deserunt molestias doloremque obcaecati corrupti saepe.</p>
       </div>
